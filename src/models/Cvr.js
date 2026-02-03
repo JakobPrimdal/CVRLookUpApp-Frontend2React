@@ -1,7 +1,7 @@
 
 export function mapCvrFromApi(dto) {
     return {
-        vat: dto.cvrNumber,
+        vat: dto.vat,
         status: dto.status,
         name: dto.name,
         address: dto.address,
