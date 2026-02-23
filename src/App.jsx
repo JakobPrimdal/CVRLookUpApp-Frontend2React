@@ -1,14 +1,14 @@
-import './App.css';
-import CvrSearch from './components/CvrSearch.jsx';
+import { Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Result from "./pages/Result";
 
 function App() {
-  
-
   return (
-    <>
-      <CvrSearch />
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/result/:cvr" element={<Result />}/>
+    </Routes>
+  );
 }
 
-export default App
+export default App;

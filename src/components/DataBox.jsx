@@ -1,10 +1,9 @@
 
-function DataBox({company}) {
-
-    return <>
+export default function DataBox({ title, children }) {
+    return (
         <div className="data-box">
-            // Make a universal component that holds either one piece of data or a grouping of data
+            <h3>{title}</h3>
+            {children}
         </div>
-    </>
-
+    );
 }

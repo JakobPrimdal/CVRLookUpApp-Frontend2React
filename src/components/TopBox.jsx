@@ -1,4 +1,10 @@
 
-function TopBox({company}) {
-    return // Top box, that holds cvr number, company name, company status, etc.
+export default function TopBox({ company }) {
+    return (
+        <div className="top-box">
+            <h2>{company.name}</h2>
+            <span className="status">{company.status}</span>
+            <p>{company.address}</p>
+        </div>
+    );
 }
