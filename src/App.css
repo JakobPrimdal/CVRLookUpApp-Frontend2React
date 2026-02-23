@@ -1,11 +1,23 @@
-body {
-  margin: 0;
+.home {
   min-height: 100vh;
-
   display: flex;
-  justify-content: center; /* vandret */
-  align-items: center;     /* lodret */
-
-  font-family: system-ui, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
 }
 
+.result-page {
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.top-box,
+.data-box {
+  background: #e0e0e0;
+  border-radius: 20px;
+  padding: 20px;
+}
