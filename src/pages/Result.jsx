@@ -19,13 +19,24 @@ export default function Result() {
             <TopBox company={company}/>
 
             <DataBox title="Contact">
-                <p>{company.phone}</p>
-                <p>{company.email}</p>
+                <p>Tlf: {company.phone}</p>
+                <p>Email: {company.email}</p>
+                <p>Fax: {company.fax}</p>
             </DataBox>
 
             <DataBox title="Company info">
-                <p>{company.industrydesc}</p>
-                <p>{company.companytype}</p>
+                <p>Ad protection: {company.protected}</p>
+                <p>Company type: {company.companytype}</p>
+                <p>Company desc: {company.companydesc}</p>
+                <p>Industry type: {company.industrytype}</p>
+                <p>Industry desc: {company.industrydesc}</p>
+                <p>Start date: {company.startdate}</p>
+                <p>End date: {company.enddate}</p>
+            </DataBox>
+
+            <DataBox title="Ownership/Employees">
+                <p>Owner: {company.owners}</p>
+                <p>Employees: {company.employees}</p>
             </DataBox>
         </div>
     );

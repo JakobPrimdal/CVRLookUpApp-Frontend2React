@@ -3,8 +3,8 @@ export default function TopBox({ company }) {
     return (
         <div className="top-box">
             <h2>{company.name}</h2>
-            <span className="status">{company.status}</span>
-            <p>{company.address}</p>
+            <span className="status">Status: {company.status}</span>
+            <p>Address: {company.address}, {company.zipcode}, {company.city}</p>
         </div>
     );
 }
