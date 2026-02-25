@@ -1,6 +1,6 @@
 .body {
-  background: #020024;
-  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background-color: #f5f7fa;
+  font-family: 'Inter', sans-serif;
 }
 
 .home {
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: grey;
 }
 
 .result-page {
@@ -30,13 +30,18 @@
 
 .top-box,
 .data-box {
-  background: #e0e0e0;
-  border-radius: 20px;
-  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 24px;
+  
 }
 
 button {
-  background-color: #DCE2F0;
-  padding: 30px 60px;
-  border-radius: 50px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
