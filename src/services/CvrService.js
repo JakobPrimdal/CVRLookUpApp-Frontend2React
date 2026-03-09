@@ -1,6 +1,6 @@
 export async function fetchCvr(cvrNumber) {
     const response = await fetch(
-        `http://localhost:8080/api/company/${cvrNumber}`
+  `${import.meta.env.VITE_API_URL}/company/${cvrNumber}`
     );
 
     if (!response.ok) {
