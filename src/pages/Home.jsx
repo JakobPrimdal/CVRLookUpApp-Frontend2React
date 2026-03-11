@@ -15,7 +15,8 @@ export default function Home() {
             <div className="card">
                 <div className='home-text'>
                     <h1>Velkommen!</h1>
-                    <h3>Find virksomhedsoplysninger med CVR-nummre.</h3>
+                    <h3>Find virksomhedsoplysninger</h3>
+                    <h3>via CVR-nummre.</h3>
                 </div>
                 <CvrSearch />
             </div>
