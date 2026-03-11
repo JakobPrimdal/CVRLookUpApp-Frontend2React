@@ -10,16 +10,27 @@ export default function CvrSearch() {
         navigate(`/result/${cvr}`);
     }
 
+    function handleChange(e) {
+        const value = e.target.value.replace(/\D/g, "").slice(0,8);
+        setCvr(value);
+    }
+
     return (
         <>
         <div className="search-container">
             <input 
+            type="tel"
+            inputMode="numeric"
+            maxLength={8}
             value={cvr}
-            onChange={(e) => setCvr(e.target.value)}
+            onChange={handleChange}
             placeholder="Enter CVR number..."
             />
         </div>
-        <button onClick={handleSearch}>Search</button>
+        <button 
+            onClick={handleSearch}
+            disabled={cvr.length !== 8}
+        >Search</button>
         </>
     );
 }
