@@ -33,10 +33,10 @@ export default function Result() {
             </DataBox>
 
             <DataBox title="Company info">
-                <p>Reklame beskyttelse: {company.protected === true ? "Ja" : "Nej"}</p>
-                <p>Virksomheds type: {company.companytype}</p>
-                <p>Virksomheds beskrivelse: {company.companydesc}</p>
-                <p>Industri type: {company.industrytype}</p>
+                <p>Reklamebeskyttelse: {company.protected === true ? "Ja" : "Nej"}</p>
+                <p>Virksomhedstype: {company.companytype}</p>
+                <p>Virksomhedsbeskrivelse: {company.companydesc}</p>
+                <p>Industritype: {company.industrytype}</p>
                 <p>Industri beskrivelse: {company.industrydesc}</p>
                 <p>Startdato: {company.startdate}</p>
                 <p>Slutdato: {company.enddate}</p>
