@@ -43,7 +43,7 @@ Frontend technologies used in this project:
 * **React**
 * **Vite**
 * **React Router**
-* **JavaScript (ES6+)**
+* **JavaScript**
 * **CSS**
 * **npm**
 
@@ -90,14 +90,8 @@ This frontend communicates with a separate backend service.
 Backend repository:
 
 ```
-CVRLookUpApp-Backend
+https://github.com/JakobPrimdal/CVRLookUpApp-Backend
 ```
-
-The backend handles:
-
-* communication with the Virk Data API
-* validation
-* formatting company data for the frontend
 
 ---
 
