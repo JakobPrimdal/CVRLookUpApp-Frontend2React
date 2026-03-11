@@ -25,7 +25,7 @@ export default function Result() {
             </DataBox>
 
             <DataBox title="Company info">
-                <p>Ad protection: {company.protected}</p>
+                <p>Ad protection: {company.protected === true ? "true" : "false"}</p>
                 <p>Company type: {company.companytype}</p>
                 <p>Company desc: {company.companydesc}</p>
                 <p>Industry type: {company.industrytype}</p>
