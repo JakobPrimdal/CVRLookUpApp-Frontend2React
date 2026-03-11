@@ -15,6 +15,13 @@ export default function CvrSearch() {
         setCvr(value);
     }
 
+    function handleKeyDown(e) {
+    if (e.key === "Enter" && cvr.length === 8) {
+        handleSearch();
+    }
+}
+
+
     return (
         <>
         <div className="search-container">
@@ -24,6 +31,7 @@ export default function CvrSearch() {
             maxLength={8}
             value={cvr}
             onChange={handleChange}
+            onKeyDown={handleKeyDown}
             placeholder="Enter CVR number..."
             />
         </div>
