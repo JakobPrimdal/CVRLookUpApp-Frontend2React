@@ -7,10 +7,18 @@ import DataBox from "../components/DataBox";
 export default function Result() {
     const { cvr } = useParams();
     const [company, setCompany] = useState(null);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetchCvr(cvr).then(setCompany);
+        fetchCvr(cvr).then(setCompany)
+        .catch((err) => setError({ message: err.message, status: err.status }));
     }, [cvr]);
+
+    if (error) return (
+        <div className="error-box">
+            <p><strong>Error {error.status}:</strong> {error.message}</p>
+        </div>
+    );
 
     if (!company) return <p>Loading...</p>;
 

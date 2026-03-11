@@ -21,3 +21,11 @@ export function mapCvrFromApi(dto) {
         owners: dto.owners
     }
 }
+
+export function mapErrorFromApi(dto) {
+    return {
+        message: dto.message,
+        status: dto.status,
+        timestamp: dto.timestamp
+    }
+}
