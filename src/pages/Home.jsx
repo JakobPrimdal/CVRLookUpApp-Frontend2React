@@ -14,8 +14,8 @@ export default function Home() {
         <div className='home'>
             <div className="card">
                 <div className='home-text'>
-                    <h1>Welcome!</h1>
-                    <h3>Get data from any danish company!</h3>
+                    <h1>Velkommen!</h1>
+                    <h3>Find virksomhedsoplysninger med CVR-nummre.</h3>
                 </div>
                 <CvrSearch />
             </div>

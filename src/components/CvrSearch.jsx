@@ -32,7 +32,7 @@ export default function CvrSearch() {
             value={cvr}
             onChange={handleChange}
             onKeyDown={handleKeyDown}
-            placeholder="Enter CVR number..."
+            placeholder="Indtast CVR nummer..."
             />
         </div>
         <button 
