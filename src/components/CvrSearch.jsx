@@ -38,7 +38,7 @@ export default function CvrSearch() {
         <button 
             onClick={handleSearch}
             disabled={cvr.length !== 8}
-        >Search</button>
+        >Søg</button>
         </>
     );
 }
