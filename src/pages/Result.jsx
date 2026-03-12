@@ -26,13 +26,13 @@ export default function Result() {
         <div className="result-page">
             <TopBox company={company}/>
 
-            <DataBox title="Contact">
+            <DataBox title="Kontakt">
                 <p>Tlf: {company.phone}</p>
                 <p>Email: {company.email}</p>
                 <p>Fax: {company.fax}</p>
             </DataBox>
 
-            <DataBox title="Company info">
+            <DataBox title="Virksomhedsinformation">
                 <p>Reklamebeskyttelse: {company.protected === true ? "Ja" : "Nej"}</p>
                 <p>Virksomhedstype: {company.companytype}</p>
                 <p>Virksomhedsbeskrivelse: {company.companydesc}</p>
@@ -42,7 +42,7 @@ export default function Result() {
                 <p>Slutdato: {company.enddate}</p>
             </DataBox>
 
-            <DataBox title="Ownership/Employees">
+            <DataBox title="Ejerskab/Ansatte">
                 <p>Ejer: {company.owners}</p>
                 <p>Ansatte: {company.employees}</p>
             </DataBox>
