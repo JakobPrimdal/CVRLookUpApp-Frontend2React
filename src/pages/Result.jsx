@@ -4,6 +4,11 @@ import { fetchCvr } from "../services/CvrService";
 import TopBox from "../components/TopBox";
 import DataBox from "../components/DataBox";
 
+function Field({ label, value }) {
+    if (!value || value == "") return null;
+    return <p>{label}: {value}</p>;
+}
+
 export default function Result() {
     const { cvr } = useParams();
     const [company, setCompany] = useState(null);
@@ -23,28 +28,28 @@ export default function Result() {
     if (!company) return <p>Loading...</p>;
 
     return (
-        <div className="result-page">
+         <div className="result-page">
             <TopBox company={company}/>
-
+ 
             <DataBox title="Kontakt">
-                <p>Tlf: {company.phone}</p>
-                <p>Email: {company.email}</p>
-                <p>Fax: {company.fax}</p>
+                <Field label="Tlf" value={company.phone} />
+                <Field label="Email" value={company.email} />
+                <Field label="Fax" value={company.fax} />
             </DataBox>
-
+ 
             <DataBox title="Virksomhedsinformation">
                 <p>Reklamebeskyttelse: {company.protected === true ? "Ja" : "Nej"}</p>
-                <p>Virksomhedstype: {company.companytype}</p>
-                <p>Virksomhedsbeskrivelse: {company.companydesc}</p>
-                <p>Industritype: {company.industrytype}</p>
-                <p>Industri beskrivelse: {company.industrydesc}</p>
-                <p>Startdato: {company.startdate}</p>
-                <p>Slutdato: {company.enddate}</p>
+                <Field label="Virksomhedstype" value={company.companytype} />
+                <Field label="Virksomhedsbeskrivelse" value={company.companydesc} />
+                <Field label="Industritype" value={company.industrytype} />
+                <Field label="Industri beskrivelse" value={company.industrydesc} />
+                <Field label="Startdato" value={company.startdate} />
+                <Field label="Slutdato" value={company.enddate} />
             </DataBox>
-
+ 
             <DataBox title="Ejerskab/Ansatte">
-                <p>Ejer: {company.owners}</p>
-                <p>Ansatte: {company.employees}</p>
+                <Field label="Ejer" value={company.owners} />
+                <Field label="Ansatte" value={company.employees} />
             </DataBox>
         </div>
     );
